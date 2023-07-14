@@ -1,7 +1,11 @@
 #include <stdio.h>
 /**
- * main A program that prints a line with puts function
- * Return 0 (successful)
+ * main - Entry points of the program:
+ *
+ * Description: This program prints the following message to the console:
+ * "Programming is like building a multilingual puzzle"
+ *
+ * Return: 0 (success)
  */
 int main(void)
 {
