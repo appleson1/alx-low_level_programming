@@ -1,25 +1,22 @@
 #include <stdio.h>
 
-/**
- * main - entry point
- * Return: 0
- */
+void print_fibonacci_sequence() {
+    int a = 1, b = 2, c, count = 0;
 
-int main(void)
-{
-	int i;
-	long int res;
-	long int num1 = 1;
-	long int num2 = 2;
+    while (count < 98) {
+        if (count < 97)
+            printf("%d, ", a);
+        else
+            printf("%d\n", a);
 
-	printf("%ld, %ld", num1, num2);
-	for (i = 0; i < 98; i++)
-	{
-		res = num1 + num2;
-		num1 = num2;
-		num2 = res;
-		printf(", %ld", res);
-	}
-	printf("\n");
-	return (0);
+        c = a + b;
+        a = b;
+        b = c;
+        count++;
+    }
+}
+
+int main() {
+    print_fibonacci_sequence();
+    return 0;
 }
