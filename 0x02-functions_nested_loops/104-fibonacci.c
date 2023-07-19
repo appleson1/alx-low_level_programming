@@ -13,7 +13,7 @@ int main(void)
 	long int num2 = 2;
 
 	printf("%ld, %ld", num1, num2);
-	for (i = 0; i < 96; i++)
+	for (i = 0; i < 98; i++)
 	{
 		res = num1 + num2;
 		num1 = num2;
